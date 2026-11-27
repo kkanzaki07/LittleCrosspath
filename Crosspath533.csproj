@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>Crosspath533</RootNamespace>
+        <AssemblyName>Crosspath533</AssemblyName>
+        <Configurations>Debug;Release</Configurations>
+        <Nullable>enable</Nullable>
+        <Optimize>False</Optimize>
+        <DebugType>embedded</DebugType>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+    <!--
+        When building on a PC with BTD6 + MelonLoader + BTD6 Mod Helper installed:
+        Place btd6.targets in this directory (or parent directory) and set your
+        BloonsTD6 install path inside it, or set the BloonsTD6 environment variable.
+        Download btd6.targets from: https://github.com/gurrenm3/BTD-Mod-Helper
+    -->
+    <Import Project="btd6.targets" Condition="Exists('btd6.targets')" />
+    <Import Project="..\btd6.targets" Condition="!Exists('btd6.targets') and Exists('..\btd6.targets')" />
+</Project>
