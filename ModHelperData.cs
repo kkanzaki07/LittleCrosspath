@@ -10,6 +10,6 @@ public static class ModHelperData
         "A lightweight crosspathing mod that lets towers upgrade up to Tier 5 on one path " +
         "and up to Tier 3 on both remaining paths (5-3-3).";
 
-    public const string RepoOwner = "YourGitHubUsername";
-    public const string RepoName = "Crosspath533";
+    public const string RepoOwner = "kkanzaki07";
+    public const string RepoName = "LittleCrosspath";
 }
